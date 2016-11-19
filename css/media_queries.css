@@ -1,0 +1,117 @@
+
+/* Portrait*/
+@media (min-device-width: 0) and (max-device-width: 480px){ 
+
+  /**================================================
+      Content Container
+===================================================**/
+#content-container {
+    width: 350px;
+    margin: 20px auto;
+}
+
+#container-header {
+    padding: 15px 5px;
+}
+
+#feeds {
+    margin: 0 5px;
+}
+
+#container-body {
+    height: 460px;
+    padding: 20px 0;
+}
+
+#elements {
+    width: 330px;
+    height: 460px;
+}
+
+.element {
+    padding: 0;
+    height: 80px;
+}
+
+.element .rank {
+    display: none;
+  }
+
+.element .image, .element .image img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+  }
+
+.element .image .fa-play-circle {
+    font-size: 20px;
+}
+
+  .fa-play-circle {
+    left: -25px;
+}
+
+.element .element-content {
+    width: 180px;
+    display: inline-block;
+}
+
+.comments {
+    font-size: 15px;
+}
+.comments b {
+    padding: 0 3px;
+}
+
+.element-title h3{
+    font-size: 1em;
+    margin: 2px 0;
+}
+
+.element-title span, .element-details{
+  font-size: 10px;
+}
+
+#tabs {
+    font-size: 12px;
+    overflow-x: scroll;
+}
+
+#tabs::-webkit-scrollbar              { 
+width:0;
+
+}
+
+#tabs::scrollbar              { 
+width:0;
+
+}
+#tabs-inner{
+  display: block;
+  text-align: center;
+}
+
+#tabs .active {
+    border-bottom: 2px solid #c84a20;
+}
+
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+
+
+
+}
+
+/*===========================================================
+                For small height Phones
+==============================================================*/
+
+/* Portrait*/
+@media (min-device-height: 0) and (max-device-height: 480px){ 
+
+  
+
+
+}

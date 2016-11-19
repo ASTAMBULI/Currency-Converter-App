@@ -1,0 +1,211 @@
+/**================================================
+			Body Style
+===================================================**/
+#currency-app{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: linear-gradient(rgba(141, 214, 132, 1), 
+	 							 rgba(141, 214, 132, 1), 
+	 							 rgba(141, 214, 132,1),
+	 							 rgba(141, 214, 132, 0.8),
+	 							 rgba(141, 214, 132, 0.5), 
+	 							 rgba(141, 214, 132, 0.1)
+	 							 );
+	font-family: Arial;
+}
+
+/**================================================
+			Content Container
+===================================================**/
+
+#content-container{
+	width: 900px;
+	margin:50px auto; 
+	background-color: transparent;
+	
+}
+
+#container-header{
+	background-color: #203d2b;
+	border-radius: 5px;
+	max-height: 50px;
+	padding: 5px;
+}
+
+#logo {
+	display: inline;
+    width: 200px;
+    margin: 8px;
+}
+
+#logo img {
+    width: 200px;
+}
+
+#tabs{
+	display: inline-block;
+	width: 650px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#tabs-inner{
+  display: inline-block;
+}
+
+#tabs ul{
+	list-style: none;
+    display: inline;
+    position: relative;
+    bottom: 10px;
+}
+
+#tabs ul li{
+	display: inline;
+    color: #556e61;
+    font-weight: 100;
+    font-size: 11px;
+    padding: 17px 25px;
+    cursor: pointer;
+    border-left: 1px solid #162f22;
+
+}
+
+#tabs ul li:hover{
+	color: #fff;
+
+}
+
+#tabs .active{
+	color: #000;
+	border-bottom: 4px solid #c84a20;
+}
+
+#feeds{
+	float:right;
+	margin: 5px;
+	cursor: pointer;
+
+}
+
+.content-panel{
+	
+}
+
+#popular-list{
+	float: left;
+	margin: 25px 25px 0 0;
+	background-color: #fff; 
+	height: 500px;
+	width:300px;
+	padding: 30px 0;
+	border-radius: 5px;
+	border: 1px solid #f3f3f3
+}
+
+#currency-app #main-panel{
+	float: right;
+	margin: 25px 0 0 0;
+	background-color: #fff; 
+	height: 470px;
+	width: 480px;
+	padding: 45px;
+	border-radius: 5px;
+	border: 1px solid #f3f3f3
+}
+
+#currency-app #main-panel h3,#currency-app #main-panel h6{
+margin: 0;
+padding: 0;
+}
+
+#currency-app #main-panel h6{
+	font-size: 10px;
+	color:#79ab2f;
+}
+#currency-app #main-panel h3{
+	color:#393939;	
+}
+
+#currency-app .head-hr {
+    border-top: solid 1.5px #e6e6e6;
+}
+
+#currency-app #inputs-space .row{
+	margin: 10px 0 0 0;
+}
+
+#currency-app #inputs-space .row .input .title{
+   color: #adabad;
+   font-size: 11px;
+   margin: 0 0 3px 0;
+
+}
+
+#currency-app #inputs-space .row .input .select-box select{
+	 border-color:#e6e6e6;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.fa-check-circle{
+	color: #1db670;
+}
+
+.element-content{
+	float: center;
+	display: inline-block;
+}
+
+.comments{
+	cursor: pointer;
+    font-size: 20px;
+    float: right;
+    vertical-align: middle;
+    padding: 30px 0;
+}
+.comments b{
+	padding-left:3px ;
+}
+
+.h-line{
+	border-top: 1px solid #f3f3f3;
+}
+
+/*--items Animation--*/
+
+.animate-element{
+	-webkit-animation: showIt  0.2s 1 cubic-bezier(.94,.31,0,.68);
+  animation: showIt 0.2s  1 cubic-bezier(.94,.31,0,.68);
+}
+
+@-webkit-keyframes showIt{
+		from {
+   
+    opacity: 0;
+  
+  }
+to {
+ opacity:1;
+  }
+
+
+  
+}
+
+@keyframes showIt{
+			from {
+   
+    opacity: 0;
+  
+  }
+to {
+ opacity:1;
+  }
+
+
+}
