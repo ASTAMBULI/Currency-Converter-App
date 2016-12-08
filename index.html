@@ -22,17 +22,46 @@
 				</div>
 				<div id="tabs">
 					<ul>
-						<li>Calculate Rates</li>
-						<li>Manage Rates</li>
-						<li>Add Rates</li>
+						<li ><span class="active">Calculate Rates</span></li>
+						<li><span>Manage Rates</span></li>
+						<li><span>Add Rates</span></li>
 						<li></li>
 					</ul>		
 				</div>
 			</div>
 			<div id="popular-list">
-				<div id="elements">
-					
-				</div>
+				<table>
+					<tr>
+						<td  class="currencies">EUR/USD</td>
+						<td>1.0880</td>
+						<td class="green">+0.0009%</td>
+					</tr>
+					<tr class="shade">
+						<td class="currencies">EUR/USD</td>
+						<td>1.0880</td>
+						<td class="red">-0.00041%</td>
+					</tr>
+					<tr>
+						<td  class="currencies">EUR/USD</td>
+						<td>1.0880</td>
+						<td class="green">+0.0007%</td>
+					</tr>
+					<tr class="shade">
+						<td  class="currencies">EUR/USD</td>
+						<td>1.0880</td>
+						<td class="red">-0.0002%</td>
+					</tr>
+					<tr>
+						<td  class="currencies">EUR/USD</td>
+						<td>1.0880</td>
+						<td class="green">+0.0005%</td>
+					</tr>
+					<tr class="shade">
+						<td  class="currencies">EUR/USD</td>
+						<td>1.0880</td>
+						<td class="green">+0.0003%</td>
+					</tr>
+				</table>
 			</div>
 			<div id="main-panel">
 				<h6>GET LIVE PRICE</h6>
@@ -41,13 +70,67 @@
 				<div id="inputs-space">
 					<div class="row">
 						<div class="input">
-							<div class="title">Currency I have</div>
+							<div class="title top-title">Currency I have:</div>
 							<div class="select-box">
-								<select>
-									<option class="flag-container flag  flag-AD">USD - Dollar</option>
-								</select>
+				<i id="country-left"  class="flag flag-US"></i><i class="fa fa-caret-down" aria-hidden="true"></i><input type="text" id="currency-left" class="rate-select flag-AD" value="USD-US Dollar">	
+					<ul class="dropdown-menu" clicked-id="filter" >
+							    <li><i class="flag flag-US"></i><a href="#" data-id="usd">USD-US Dollar </a></li>
+							    <li><i class="flag flag-TZ"></i><a href="#" data-id="tzs">TZS-Tanzanian Shilling</a></li>
+							    <li><i class="flag flag-GB"></i><a href="#" data-id="gbp">GBP-British Pound </a></li>
+							    <li><i class="flag flag-KE"></i><a href="#" data-id="kes">KES-Kenyan Shilling </a></li>
+							    <li><i class="flag flag-CA"></i><a href="#" data-id="cad">CAD-Canadian Dollar</a></li>
+							    <li><i class="flag flag-CN"></i><a href="#" data-id="cny">CNY-Chinese Yuan</a></li>
+							     <li><i class="flag flag-EU"></i><a href="#" data-id="eur">EUR-Euro</a></li>
+							     <li><i class="flag flag-JP"></i><a href="#" data-id="jpy">JPY-Japanese Yen</a></li>
+							  </ul> 
 							</div>
 						</div>
+						<span class="swap"><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						<div class="input">
+							<div class="title top-title">Currency I want:</div>
+							<div class="select-box">
+								<i id="country-right" class="flag flag-TZ"></i><i class="fa fa-caret-down" aria-hidden="true"></i> <input type="text" id="currency-right" class="rate-select" value="TZS-Tanzanian Shilling">
+								<ul class="dropdown-menu" clicked-id="filter" >
+							    <li><i class="flag flag-US"></i><a href="#" data-id="usd">USD-US Dollar </a></li>
+							    <li><i class="flag flag-TZ"></i><a href="#" data-id="tzs">TZS-Tanzanian Shilling</a></li>
+							    <li><i class="flag flag-GB"></i><a href="#" data-id="gbp">GBP-British Pound </a></li>
+							    <li><i class="flag flag-KE"></i><a href="#" data-id="kes">KES-Kenyan Shilling </a></li>
+							    <li><i class="flag flag-CA"></i><a href="#" data-id="cad">CAD-Canadian Dollar</a></li>
+							    <li><i class="flag flag-CN"></i><a href="#" data-id="cny">CNY-Chinese Yuan</a></li>
+							     <li><i class="flag flag-EU"></i><a href="#" data-id="ero">EUR-Euro</a></li>
+							      <li><i class="flag flag-JP"></i><a href="#" data-id="jpy">JPY-Japanese Yen</a></li>
+							  </ul> 
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input">
+							<div class="title">Amount:</div>
+							<div class="select-box">
+								<input class="rate-input" type="text" name="">
+							</div>
+						</div>
+						<span class="swap"><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						<div class="input">
+							<div class="title">Amount:</div>
+							<div class="select-box">
+								<input class="rate-input"  type="text" name="">
+							</div>
+						</div>
+					</div>
+					<div class="alert">
+						<span class="icon">
+							i
+						</span>
+						<p class="alert-content">
+							The Base country is Tanzania, All rates are calculated according to TZ Shilling
+						</p>
+						<button class="calculate-button">
+							CALCULATE RATE
+						</button>
+					</div>
+					<div class="bottom-image">
+						<img src="img/money.png">
 					</div>
 					
 				</div>

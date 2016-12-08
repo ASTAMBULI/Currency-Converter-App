@@ -1,7 +1,8 @@
 .flag {
   background-image: url("flagslogo.png");
-  background-position: -4px -129px;
   -webkit-appearance: none;
+  margin: -4px 5px;
+  background-position: -4px -129px;
   display: inline-block;
   height: 17px;
   width: 23px;
@@ -285,7 +286,7 @@
 .flag-TL {
   background-position: -4px -969px;
 }
-.flag-TR {
+.flag-EU {
   background-position: -37px -969px;
 }
 .flag-TZ {
@@ -300,7 +301,7 @@
 .flag-VE {
   background-position: -37px -1011px;
 }
-.flag-VN {
+.flag-KE {
   background-position: -4px -1032px;
 }
 .flag-YE {

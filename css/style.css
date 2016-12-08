@@ -21,49 +21,49 @@
 			Content Container
 ===================================================**/
 
-#content-container{
+#currency-app #content-container{
 	width: 900px;
 	margin:50px auto; 
 	background-color: transparent;
 	
 }
 
-#container-header{
+#currency-app #container-header{
 	background-color: #203d2b;
 	border-radius: 5px;
 	max-height: 50px;
 	padding: 5px;
 }
 
-#logo {
+#currency-app #logo {
 	display: inline;
     width: 200px;
     margin: 8px;
 }
 
-#logo img {
+#currency-app #logo img {
     width: 200px;
 }
 
-#tabs{
+#currency-app #tabs{
 	display: inline-block;
 	width: 650px;
 	text-align: center;
 	vertical-align: middle;
 }
 
-#tabs-inner{
+#currency-app #tabs-inner{
   display: inline-block;
 }
 
-#tabs ul{
+#currency-app #tabs ul{
 	list-style: none;
     display: inline;
     position: relative;
     bottom: 10px;
 }
 
-#tabs ul li{
+#currency-app #tabs ul li{
 	display: inline;
     color: #556e61;
     font-weight: 100;
@@ -74,36 +74,71 @@
 
 }
 
-#tabs ul li:hover{
+#currency-app #tabs ul li:hover{
 	color: #fff;
 
 }
 
-#tabs .active{
-	color: #000;
-	border-bottom: 4px solid #c84a20;
+#currency-app #tabs .active{
+	color: #fff;
+	border-bottom: 1px solid #6fa148;
 }
 
-#feeds{
+#currency-app #feeds{
 	float:right;
 	margin: 5px;
 	cursor: pointer;
 
 }
 
-.content-panel{
+#currency-app .content-panel{
 	
 }
 
-#popular-list{
+#currency-app #popular-list{
 	float: left;
 	margin: 25px 25px 0 0;
 	background-color: #fff; 
-	height: 500px;
+	height: 560px;
 	width:300px;
-	padding: 30px 0;
+	padding: 0;
 	border-radius: 5px;
-	border: 1px solid #f3f3f3
+	border: 1px solid #f3f3f3;
+	overflow: hidden;
+}
+
+#currency-app #popular-list table{
+	width: 310px;
+	margin: -1px;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 14px;
+	
+	}
+
+#currency-app #popular-list tr,
+#currency-app #popular-list td{
+	border: solid 1px #e1e1e1;
+	}
+
+#currency-app #popular-list td{
+	height: 40px;
+}
+
+#currency-app #popular-list .currencies{
+	font-weight: bolder;
+}
+
+#currency-app #popular-list .shade{
+	background-color: #fafafa;
+}
+
+#currency-app #popular-list .green{
+	color: #79ac2d;
+}
+
+#currency-app #popular-list .red{
+	color: #cf3324;
 }
 
 #currency-app #main-panel{
@@ -140,40 +175,216 @@ padding: 0;
 
 #currency-app #inputs-space .row .input .title{
    color: #adabad;
-   font-size: 11px;
+   font-size: 13px;
    margin: 0 0 3px 0;
 
 }
 
-#currency-app #inputs-space .row .input .select-box select{
-	 border-color:#e6e6e6;
-    width: 200px;
+#currency-app #inputs-space .row .input .top-title{
+    margin: 0 0 -10px 0;
+}
+
+#currency-app #inputs-space .row .input{
+	display: inline-block;
+	width: 200px;
+	margin: 0 5px;
+}
+
+#currency-app #inputs-space .row .swap{ 
+   background-color: #f3f5f4;
+   width: 40px;
+    height: 25px;
+    padding: 8px 10px;
+    margin: 0  0 8px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#currency-app #inputs-space .row .swap i{ 
+   color: #979797;
+   font-size: 16px;
+   font-weight: bolder;
+    
+}
+
+#currency-app #inputs-space .row .input .select-box .rate-select,
+#currency-app #inputs-space .row .input .select-box .rate-input{
+    display: inline;
+    border: solid 1px #e6e6e6;
+    width: 170px;
     height: 30px;
     border-radius: 5px;
+    padding-left: 34px;
+    font-weight: 500;
 }
 
-.fa-check-circle{
-	color: #1db670;
+#currency-app #inputs-space .row .input .select-box #country-right,
+#currency-app #inputs-space .row .input .select-box #country-left{
+	position: relative;
+    top: 26px;
 }
 
-.element-content{
+#currency-app #inputs-space .row .input .select-box .fa-caret-down{
+    position: relative;
+    top: 28px;
+    left: 155px;
+    cursor: pointer;
+}
+
+#currency-app #inputs-space .dropdown{
+	width: 780px;
+	margin: 50px auto 0;
+	font-size: 20px;
+}
+
+#currency-app #inputs-space .dropdown{
+	cursor: pointer;
+}
+
+#currency-app #inputs-space .dropdown-menu {
+  	position: absolute;
+    z-index: 1000;
+    display: block;
+    float: left;
+    width: 205px;
+    max-height: 130px;
+    overflow-y: scroll;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+}
+
+#currency-app #inputs-space .dropdown-menu::-webkit-scrollbar              { 
+width:8px;
+background-color:#fff;
+border-radius: 5px;
+
+}
+
+#currency-app #inputs-space .dropdown-menu::-webkit-scrollbar-track        { 
+     width:5px;
+     border-radius: 5px;
+}
+
+#currency-app #inputs-space .dropdown-menu::-webkit-scrollbar-thumb        { 
+    background:#ccc; 
+    width:8px;
+    border-radius: 5px;
+ }
+
+#currency-app #inputs-space .dropdown-menu>li>a {
+    display: inline-block;
+    padding: 4px 0px;
+    clear: both;
+    font-weight: 500;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#currency-app #inputs-space .dropdown-menu li:hover{
+	background-color: #f3f3f3;
+}
+
+#currency-app #inputs-space .open{
+	display: block;
+
+}
+
+
+#currency-app input:focus{
+    outline: none;
+}
+
+#currency-app .element-content{
 	float: center;
 	display: inline-block;
 }
 
-.comments{
+#currency-app .comments{
 	cursor: pointer;
     font-size: 20px;
     float: right;
     vertical-align: middle;
     padding: 30px 0;
 }
-.comments b{
+#currency-app .comments b{
 	padding-left:3px ;
 }
 
-.h-line{
+#currency-app .h-line{
 	border-top: 1px solid #f3f3f3;
+}
+
+#currency-app .alert{
+	margin: 30px 5px;
+	padding: 10px 5px;
+	background-color: #fafafa;
+}
+
+#currency-app .alert .icon{
+	    width: 100px;
+    border-radius: 50%;
+    border: solid 2px #e6e6e6;
+    color: #e6e6e6;
+    margin: 0px 10px 5px 8px;
+    padding: 8px 10px 8px 14px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+	
+}
+
+#currency-app .alert .alert-content{
+	display: inline-block;
+	width: 250px;
+	font-size: 12px;
+}
+
+#currency-app .alert .calculate-button{
+ 	    color: #fff;
+    background-color: #79ac2d;
+    font-weight: bolder;
+    padding: 8px 10px;
+    border: solid 2px #79ac2d;
+    border-bottom: solid 3px #4e7d21;
+    border-radius: 4px;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+#currency-app .bottom-image{
+ 	  width: 150px;
+    height: 150px;
+    float: right;
+    border-radius: 50%;
+    background-color: #fafafa;
+    position: relative;
+    top: 30px;
+}
+
+#currency-app  .bottom-image img{
+ 	   width: 150px;
+ 	   height: 150px;
+ 	   border-radius: 50%;
+ 	   
 }
 
 /*--items Animation--*/
