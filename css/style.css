@@ -30,9 +30,9 @@
 
 #currency-app #container-header{
 	background-color: #203d2b;
-	border-radius: 5px;
-	max-height: 50px;
-	padding: 5px;
+    border-radius: 5px;
+    max-height: 50px;
+    padding: 15px 5px;
 }
 
 #currency-app #logo {
@@ -68,7 +68,7 @@
     color: #556e61;
     font-weight: 100;
     font-size: 11px;
-    padding: 17px 25px;
+    padding: 27px 25px;
     cursor: pointer;
     border-left: 1px solid #162f22;
 
@@ -127,6 +127,7 @@
 
 #currency-app #popular-list .currencies{
 	font-weight: bolder;
+	cursor: pointer;
 }
 
 #currency-app #popular-list .shade{
@@ -214,10 +215,23 @@ padding: 0;
     width: 170px;
     height: 30px;
     border-radius: 5px;
-    padding-left: 34px;
     font-weight: 500;
 }
 
+#currency-app #inputs-space .row .input .select-box .rate-select{
+	padding-left: 34px;
+}
+
+#currency-app #inputs-space .row .input .select-box .rate-input{
+   width: 185px;
+   padding: 0 10px;
+      font-weight: 500;
+    font-size: 18px;
+}
+
+#currency-app #inputs-space .row .input .select-box  .error{
+	 border: solid 1px red;
+}
 #currency-app #inputs-space .row .input .select-box #country-right,
 #currency-app #inputs-space .row .input .select-box #country-left{
 	position: relative;
@@ -244,7 +258,7 @@ padding: 0;
 #currency-app #inputs-space .dropdown-menu {
   	position: absolute;
     z-index: 1000;
-    display: block;
+    display: none;
     float: left;
     width: 205px;
     max-height: 130px;

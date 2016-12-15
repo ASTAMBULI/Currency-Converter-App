@@ -1,0 +1,38 @@
+{
+  "defaultLeft": "TZ",
+  "defaultRight": "US",
+  "countries": [
+    {
+      "code": "TZ",
+      "name": "Tanzania"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya"
+    },
+    {
+      "code": "US",
+      "name": "United States of America"
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "code": "EU",
+      "name": "Europian Union"
+    },
+    {
+      "code": "CN",
+      "name": "China"
+    },
+    {
+      "code": "CA",
+      "name": "Canada"
+    },
+    {
+      "code": "JP",
+      "name": "Japan"
+    }
+  ]
+}

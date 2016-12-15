@@ -1,0 +1,42 @@
+[
+    {
+      "code": "TZ",
+      "currency":"TZS",
+      "desc": "Tanzanian Shilling"
+    },
+    {
+      "code": "KE",
+      "currency":"KES",
+      "desc": "Kenyan Shilling"
+    },
+    {
+      "code": "US",
+      "currency":"USD",
+      "desc": "US Dollar"
+    },
+    {
+      "code": "GB",
+      "currency":"GBP",
+      "desc": "British Pound"
+    },
+    {
+      "code": "EU",
+      "currency":"EUR",
+      "desc": "Euro"
+    },
+    {
+      "code": "CN",
+      "currency":"CNY",
+      "desc": "Chinese Yuan"
+    },
+    {
+      "code": "CA",
+      "currency":"CAD",
+      "desc": "Canadian Dollar"
+    },
+    {
+      "code": "JP",
+      "currency":"JPY",
+      "desc": "Japanese Yen"
+    }
+  ]

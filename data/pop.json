@@ -1,0 +1,34 @@
+[
+  {
+      "base": "EU",
+      "other":"US"
+    },
+     {
+      "base": "TZ",
+      "other":"US"
+    },
+     {
+      "base": "TZ",
+      "other":"EU"
+    },
+     {
+      "base": "CA",
+      "other":"JP"
+    },
+      {
+      "base": "CN",
+      "other":"GB"
+    },
+     {
+      "base": "KE",
+      "other":"TZ"
+    },
+     {
+      "base": "GB",
+      "other":"US"
+    },
+     {
+      "base": "TZ",
+      "other":"GB"
+    }
+  ]

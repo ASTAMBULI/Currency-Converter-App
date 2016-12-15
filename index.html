@@ -6,8 +6,6 @@
  	    <meta name="viewport" content="width=device-width, initial-scale=1">
  	   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
  	    <link rel="stylesheet" href="font-awesome/css/font-awesome.css"  type="text/css">
- 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
  	    <link rel="stylesheet" href="css/style.css" type="text/css">
  	    <link rel="stylesheet" href="css/media_queries.css" type="text/css">
  	    <link rel="stylesheet" href="css/flags.css" type="text/css">
@@ -31,36 +29,7 @@
 			</div>
 			<div id="popular-list">
 				<table>
-					<tr>
-						<td  class="currencies">EUR/USD</td>
-						<td>1.0880</td>
-						<td class="green">+0.0009%</td>
-					</tr>
-					<tr class="shade">
-						<td class="currencies">EUR/USD</td>
-						<td>1.0880</td>
-						<td class="red">-0.00041%</td>
-					</tr>
-					<tr>
-						<td  class="currencies">EUR/USD</td>
-						<td>1.0880</td>
-						<td class="green">+0.0007%</td>
-					</tr>
-					<tr class="shade">
-						<td  class="currencies">EUR/USD</td>
-						<td>1.0880</td>
-						<td class="red">-0.0002%</td>
-					</tr>
-					<tr>
-						<td  class="currencies">EUR/USD</td>
-						<td>1.0880</td>
-						<td class="green">+0.0005%</td>
-					</tr>
-					<tr class="shade">
-						<td  class="currencies">EUR/USD</td>
-						<td>1.0880</td>
-						<td class="green">+0.0003%</td>
-					</tr>
+					
 				</table>
 			</div>
 			<div id="main-panel">
@@ -71,34 +40,18 @@
 					<div class="row">
 						<div class="input">
 							<div class="title top-title">Currency I have:</div>
-							<div class="select-box">
-				<i id="country-left"  class="flag flag-US"></i><i class="fa fa-caret-down" aria-hidden="true"></i><input type="text" id="currency-left" class="rate-select flag-AD" value="USD-US Dollar">	
-					<ul class="dropdown-menu" clicked-id="filter" >
-							    <li><i class="flag flag-US"></i><a href="#" data-id="usd">USD-US Dollar </a></li>
-							    <li><i class="flag flag-TZ"></i><a href="#" data-id="tzs">TZS-Tanzanian Shilling</a></li>
-							    <li><i class="flag flag-GB"></i><a href="#" data-id="gbp">GBP-British Pound </a></li>
-							    <li><i class="flag flag-KE"></i><a href="#" data-id="kes">KES-Kenyan Shilling </a></li>
-							    <li><i class="flag flag-CA"></i><a href="#" data-id="cad">CAD-Canadian Dollar</a></li>
-							    <li><i class="flag flag-CN"></i><a href="#" data-id="cny">CNY-Chinese Yuan</a></li>
-							     <li><i class="flag flag-EU"></i><a href="#" data-id="eur">EUR-Euro</a></li>
-							     <li><i class="flag flag-JP"></i><a href="#" data-id="jpy">JPY-Japanese Yen</a></li>
+							<div class="select-box" data-id="US" id="filter-left">
+				<i id="country-left" data-id="country" class="flag flag-US"></i><i class="fa fa-caret-down droper" data-id="filter-left" aria-hidden="true"></i><input type="text" id="currency-left" class="rate-select flag-AD" value="USD-US Dollar">	
+					<ul class="dropdown-menu" clicked-id="filter-left" >
 							  </ul> 
 							</div>
 						</div>
-						<span class="swap"><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						<span id="swap-top" class="swap"><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
 						<div class="input">
 							<div class="title top-title">Currency I want:</div>
-							<div class="select-box">
-								<i id="country-right" class="flag flag-TZ"></i><i class="fa fa-caret-down" aria-hidden="true"></i> <input type="text" id="currency-right" class="rate-select" value="TZS-Tanzanian Shilling">
-								<ul class="dropdown-menu" clicked-id="filter" >
-							    <li><i class="flag flag-US"></i><a href="#" data-id="usd">USD-US Dollar </a></li>
-							    <li><i class="flag flag-TZ"></i><a href="#" data-id="tzs">TZS-Tanzanian Shilling</a></li>
-							    <li><i class="flag flag-GB"></i><a href="#" data-id="gbp">GBP-British Pound </a></li>
-							    <li><i class="flag flag-KE"></i><a href="#" data-id="kes">KES-Kenyan Shilling </a></li>
-							    <li><i class="flag flag-CA"></i><a href="#" data-id="cad">CAD-Canadian Dollar</a></li>
-							    <li><i class="flag flag-CN"></i><a href="#" data-id="cny">CNY-Chinese Yuan</a></li>
-							     <li><i class="flag flag-EU"></i><a href="#" data-id="ero">EUR-Euro</a></li>
-							      <li><i class="flag flag-JP"></i><a href="#" data-id="jpy">JPY-Japanese Yen</a></li>
+							<div class="select-box" data-id="TZ" id="filter-right">
+								<i id="country-right" data-id="country" class="flag flag-TZ"></i><i class="fa fa-caret-down droper" data-id="filter-right" aria-hidden="true"></i> <input type="text" id="currency-right" class="rate-select" value="TZS-Tanzanian Shilling">
+								<ul class="dropdown-menu" clicked-id="filter-right" >
 							  </ul> 
 							</div>
 						</div>
@@ -107,14 +60,14 @@
 						<div class="input">
 							<div class="title">Amount:</div>
 							<div class="select-box">
-								<input class="rate-input" type="text" name="">
+								<input class="rate-input" id="input-left" type="text" name="">
 							</div>
 						</div>
-						<span class="swap"><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+						<span id="swap-bottom" class="swap"><i class="fa fa-angle-left" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
 						<div class="input">
 							<div class="title">Amount:</div>
 							<div class="select-box">
-								<input class="rate-input"  type="text" name="">
+								<input class="rate-input" id="input-right"  type="text" name="">
 							</div>
 						</div>
 					</div>
